@@ -1,10 +1,9 @@
 import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
+import { inject, Injectable, LOCALE_ID } from '@angular/core';
 import { Observable, catchError, map, throwError } from 'rxjs';
 import { Product, FreshPie, Cart } from './product';
 
 export const API = './api/';
-// export const API = '/api/';
 export const PRODUCTS_URL = 'products.json';
 
 @Injectable({
@@ -14,9 +13,14 @@ export class PiesService {
 
   private http = inject(HttpClient);
 
+  private locale = inject(LOCALE_ID);
+
   constructor() { }
   private formURL(): string {
     let url = `${API}${PRODUCTS_URL}`;
+    if (this.locale !== 'en-US') {
+      url = `${API}${this.locale}/${PRODUCTS_URL}`;
+    }
 
     return url
   }
