@@ -19,8 +19,8 @@ I18nAngularize is an Angular project focused on internationalization (i18n) and 
 To get started with the project, clone the repository and install the dependencies:
 
 ```sh
-git clone https://github.com/your-username/I18nAngularize.git
-cd I18nAngularize
+git clone https://github.com/ajaybhalerao12/i18n-angularize.git
+cd i18n-angularize
 npm install
 ```
 ## Features
