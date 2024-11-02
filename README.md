@@ -6,6 +6,7 @@ I18nAngularize is an Angular project focused on internationalization (i18n) and 
 ## Table of Contents
 
 - [Installation](#installation)
+- [Features](#features)
 - [Development Server](#development-server)
 - [Build](#build)
 - [Running Tests](#running-tests)
@@ -22,6 +23,12 @@ git clone https://github.com/your-username/I18nAngularize.git
 cd I18nAngularize
 npm install
 ```
+## Features
+- Multilingual Support
+- Seamless Integration
+- Dynamic Content Translation
+- Locale Management
+
 ## Development Server
 Run the following command to start the development server:
 ```bash
