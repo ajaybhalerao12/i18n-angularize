@@ -29,6 +29,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/api",
+                "output": "/api"
               }
             ],
             "styles": [
@@ -67,7 +72,8 @@
               "buildTarget": "i18n-angularize:build:production"
             },
             "development": {
-              "buildTarget": "i18n-angularize:build:development"
+              "buildTarget": "i18n-angularize:build:development",
+              "proxyConfig": "src/proxy.config.json"
             }
           },
           "defaultConfiguration": "development"

@@ -1,0 +1,14 @@
+<app-hero></app-hero>
+  <section class="cafe">
+    <h2>What's cooking?</h2>
+    <p>Enjoy a freshly made pie in our cafe</p>
+    <div class="pie-grid">
+        <div class="pie-item" *ngFor="let pie of preparing | async">
+          <img src={{pie.image}} alt="image of {{pie.name}}" />
+          <div class="pie-info">
+            <p>{{pie.name}}</p>
+            <p>Ready {{pie.timeRemaining}} minute(s)</p>
+          </div>
+        </div>
+    </div>
+  </section>
